@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif Rahman's Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+            line-height:1.6;
+        }
+
+        header{
+            text-align:center;
+            padding:40px;
+            background:rgba(0,0,0,0.3);
+            backdrop-filter:blur(10px);
+        }
+
+        header h1{
+            font-size:3rem;
+            color:#ffd700;
+            text-shadow:2px 2px 10px black;
+        }
+
+        header p{
+            font-size:1.2rem;
+            color:#f5f5f5;
+        }
+
+        nav{
+            text-align:center;
+            background:#111;
+            padding:15px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd700;
+        }
+
+        section{
+            width:85%;
+            margin:30px auto;
+            background:rgba(255,255,255,0.1);
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h2{
+            color:#ffd700;
+            margin-bottom:15px;
+            border-bottom:2px solid #ffd700;
+            padding-bottom:5px;
+        }
+
+        figure{
+            text-align:center;
+            margin:20px 0;
+        }
+
+        img{
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            border:5px solid #ffd700;
+            object-fit:cover;
+        }
+
+        figcaption{
+            margin-top:10px;
+            color:#ddd;
+        }
+
+        blockquote{
+            background:#222;
+            padding:15px;
+            border-left:5px solid #ffd700;
+            margin:20px 0;
+            font-style:italic;
+        }
+
+        details{
+            background:#333;
+            padding:10px;
+            border-radius:10px;
+            margin-top:15px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table, th, td{
+            border:1px solid white;
+        }
+
+        th{
+            background:#ffd700;
+            color:black;
+        }
+
+        th, td{
+            padding:12px;
+            text-align:center;
+        }
+
+        ul, ol{
+            margin-left:30px;
+            margin-top:10px;
+        }
+
+        dl{
+            margin-top:15px;
+        }
+
+        dt{
+            font-weight:bold;
+            color:#ffd700;
+        }
+
+        article{
+            background:rgba(255,255,255,0.1);
+            padding:15px;
+            margin:15px 0;
+            border-radius:10px;
+        }
+
+        audio,
+        video{
+            width:100%;
+            margin-top:15px;
+            border-radius:10px;
+        }
+
+        iframe{
+            width:100%;
+            border:none;
+            border-radius:10px;
+            margin-top:15px;
+        }
+
+        progress,
+        meter{
+            width:100%;
+            height:25px;
+        }
+
+        form{
+            margin-top:20px;
+        }
+
+        fieldset{
+            border:2px solid #ffd700;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        legend{
+            color:#ffd700;
+            font-weight:bold;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:none;
+            border-radius:8px;
+        }
+
+        input[type="submit"]{
+            background:#ffd700;
+            color:black;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        input[type="submit"]:hover{
+            background:#ff9900;
+            transform:scale(1.05);
+        }
+
+        a{
+            color:#ffd700;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#111;
+            margin-top:30px;
+        }
+
+        hr{
+            border:none;
+            height:2px;
+            background:#ffd700;
+            width:90%;
+            margin:20px auto;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2rem;
+            }
+
+            section{
+                width:95%;
+            }
+
+            nav a{
+                display:block;
+                margin:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        Asif Rahman
+    </h1>
+    <p><strong>Web Developer</strong> | <em>Student</em></p>
+    <hr>
+</header>
+
+<nav>
+    <a href="#about">About</a> |
+    <a href="#education">Education</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <figure>
+        <img src="c:\Users\Ethnotech\Downloads\download.png" alt="Profile Photo">
+        <figcaption>My Profile Picture</figcaption>
+    </figure>
+
+    <p>
+        Hello! I am <mark>Asif Rahman</mark>.
+        I am interested in <b>Web Development</b>,
+        <i>Programming</i>, and <u>Technology</u>.
+    </p>
+
+    <blockquote>
+        "Success comes from consistency, not perfection."
+    </blockquote>
+
+    <details>
+        <summary>More About Me</summary>
+        <p>I enjoy coding, gym workouts, and learning new technologies.</p>
+    </details>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <table>
+        <caption>Academic Details</caption>
+        <tr>
+            <th>Year</th>
+            <th>Course</th>
+            <th>Institution</th>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>ELECTRONICS AND INSTRUMENTATION</td>
+            <td>FISAT</td>
+        </tr>
+    </table>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>GitHub</li>
+        <li>Problem Solving</li>
+    </ul>
+
+    <ol>
+        <li>Web Design</li>
+        <li>Portfolio Development</li>
+        <li>Learning New Technologies</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Markup language for webpages.</dd>
+
+        <dt>GitHub</dt>
+        <dd>Platform for hosting projects.</dd>
+    </dl>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+        <h3>Arduino Project</h3>
+        <p>Built an Arduino-based automation project.</p>
+    </article>
+
+    <article>
+        <h3>Portfolio Website</h3>
+        <p>Created a personal portfolio using HTML.</p>
+    </article>
+
+    <h3>Project Audio</h3>
+    <audio controls>
+        
+    </audio>
+
+    <h3>Project Video</h3>
+    
+
+    <h3>Location</h3>
+    <iframe
+        src="https://www.google.com/maps?q=Myra%20Pint%20Kochi&output=embed"
+        height="300"
+        loading="lazy">
+    </iframe>
+</section>
+
+<section>
+    <h2>Achievements</h2>
+
+    <progress value="80" max="100"></progress>
+    <br><br>
+
+    <meter value="0.9">90%</meter>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <form>
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+
+    <p>
+        Email:
+        <a href="mailto:asifrahamnkelot@gmail.com">asifrahamnkelot@gmail.com</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Asif Rahman</p>
+    <small>Built using HTML only.</small>
+</footer>
+
+</body>
+</html>
